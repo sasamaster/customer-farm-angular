@@ -1,0 +1,18 @@
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th>Customer</th>
+      <th>Farm</th>
+    </tr>
+  </thead>
+   <tbody >
+     <tr>
+       <td>{{customer.firstName}}</td>
+       <td>{{customer.lastName}}</td>
+     </tr>
+     <tr *ngFor='let farm of farms'>
+       <td>{{farm.farmName}}</td>
+       <td>{{farm.price}}</td>
+     </tr>
+   </tbody>
+  </table>
